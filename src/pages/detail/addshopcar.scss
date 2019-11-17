@@ -1,0 +1,25 @@
+@import '../../assets/style/theme.scss';
+@import '../../assets/style/border.scss';
+
+.addshopcar{
+    float: right;
+    width: 100%;
+    padding:.1rem;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: .4rem;
+    button{
+        color:#fff;
+        height: .44rem;
+        width: 50%;
+        border: $theme;
+       @include border( $theme,.02rem);
+        &:first-child{
+            background: #fff;
+            color:$theme
+        }
+        &:last-child{
+            background: $theme;
+        }
+    }
+}

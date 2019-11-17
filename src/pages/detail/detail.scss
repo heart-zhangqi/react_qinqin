@@ -1,0 +1,67 @@
+@import '../../assets/style/theme.scss';
+@import '../../assets/style/border.scss';
+.detail-show{
+    padding:.1rem;
+    box-sizing: border-box;
+}
+.detailimg{
+    height:100%;
+    width: 100%;
+}
+h3{
+    color:#333;
+    font-size: .24rem;
+    font-weight: normal;
+}
+.conent{
+    display: flex;
+    justify-content: space-between;
+    .quanhoujia{
+        color:$theme;
+        i{
+            font-size: .18rem;
+        }
+    }
+    .tianmaopjia{
+        color:#ccc;
+        font-size:.12rem;
+        .detail_right{
+            color:#ccc;
+            font-size:.12rem;
+        }
+    }
+}
+
+.name{
+    height: .7rem;
+    width: 100%;
+    text-align: center;
+    background: url(https://cmsstatic.ffquan.cn//wap_new/main/images/goods_quan.png?v=201911151639) left top/100% 100%;
+    span{
+        color:#fff;
+        font-size: .24rem;
+        line-height: .7rem;
+    }
+}
+.am-stepper-input{
+    // width: .5rem!important;
+    // height: .28rem !important;
+    // text-align: center;
+    // line-height: .24rem;
+    color:$theme;
+    // @include border($theme,0.01rem) ;
+    // border:0.01rem solid $theme !important;
+    // outline:0;
+    // margin:0;
+    // padding:0;
+}
+.am-stepper-handler{
+    background: #fff;
+    display: inline-block;
+    width: .24rem;
+    height: .24rem;
+    text-align: center;
+    line-height: .24rem;
+    color:$theme;
+    @include border($theme,0.02rem);
+}

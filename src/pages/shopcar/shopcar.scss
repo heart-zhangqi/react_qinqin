@@ -1,0 +1,71 @@
+@import '../../assets/style/border.scss';
+@import '../../assets/style/theme.scss';
+.shopcar{
+    display: flex;
+    justify-content: space-between;
+    height:1.6rem;
+    margin:.05rem;
+    padding:.05rem;
+    @include border(#333,0.01rem);
+    box-sizing: border-box;
+    border-radius: .1rem;
+    .shopcar-left{
+        img{
+            width: 1.5rem;
+            height: 1.5rem;
+            margin:.01rem;
+        }
+    }
+    .shopcar-right{
+        flex: 1;
+        position: relative;
+        padding:.1rem;
+        box-sizing: border-box;
+        .kucun{
+            color:#777;
+            font-size: .14rem;
+        }
+        .number{
+            position: absolute;
+            bottom: .06rem;
+            right: .02rem;
+            span{
+                background: #fff;
+                display: inline-block;
+                width: .24rem;
+                height: .24rem;
+                text-align: center;
+                line-height: .24rem;
+                color:$theme;
+                @include border($theme,0.02rem);
+            }
+            input{
+                width: .5rem;
+                height: .22rem;
+                text-align: center;
+                line-height: .24rem;
+                // color:$theme;
+                // @include border($theme,0.01rem) ;
+                border:0.01rem solid $theme !important;
+                outline:0;
+                margin:0;
+                padding:0;
+
+            }
+            s{
+                display: inline-block;
+                height: .2rem;
+                line-height: .2rem;
+                margin: .05rem;
+                font-size: .12rem;
+                color:#777;
+                i{
+                    color:$theme;
+                    font-size:.18rem;
+                }
+            }
+
+        }
+    }
+    
+}

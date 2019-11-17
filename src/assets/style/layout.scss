@@ -1,0 +1,13 @@
+html,body,.layout,#root,.App{
+    height: 100%;
+}
+.layout{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+.container{
+    flex:1;
+    overflow: auto;
+    position: relative;
+}
